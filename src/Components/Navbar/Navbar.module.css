@@ -1,0 +1,41 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #0da8d7;
+    display: flex;
+    justify-content: space-between;
+}
+
+ nav{
+    display: flex;
+    width: 70%;
+    padding: 10px;
+    justify-content: flex-end;
+
+    
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+
+    
+}
+li{
+    padding: 0 10px;
+}
+
+li input{
+    width: 100%;
+}
+li a{
+    text-decoration: none;
+}
+.navbar div{
+    display: flex;
+    align-items: center;
+}

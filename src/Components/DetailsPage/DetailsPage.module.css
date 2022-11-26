@@ -1,0 +1,40 @@
+.Page2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e4dede;
+    padding: 20px;
+}
+h1{
+    margin-top: 80px;
+    color: rgb(12, 12, 138);
+    font-family: 'Patrick Hand', cursive;
+}
+
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image_container{
+    width: 35%;
+}
+.image_container img{
+    width: 100%;
+}
+
+.testimonial_info{
+    width: 40%;
+    padding: 20px;
+}
+
+.testimonial_text{
+    margin-bottom: 40px;
+}
+button{
+    font-weight: 20px;
+    padding: 5px;
+    border: 1px solid grey;
+    color: rgb(9, 175, 205);
+    cursor: pointer;
+
+}

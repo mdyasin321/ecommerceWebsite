@@ -1,0 +1,9 @@
+.ordersSummary{
+    display: flex;
+    align-items: center;
+}
+
+.div1, .div2{
+    width: 45%;
+
+}
