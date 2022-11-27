@@ -25,6 +25,7 @@ class App extends Component{
       <DetailsPage add={this.addToCart}
                     cart={this.state.cart}></DetailsPage>
       // <OrdersPage></OrdersPage>
+//        yasin
   
     )
   }
