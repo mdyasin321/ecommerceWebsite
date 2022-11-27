@@ -33,6 +33,7 @@ const DetailsPage =(props)=>{
               <h3>Clone branch has been made</h3>
               <h4>htrrr</h4>
               <h5>sun and moon</h5>
+//                jhugeufih
   
               
             </div>
