@@ -30,6 +30,7 @@ const DetailsPage =(props)=>{
               }}><strong style={{color:'red'}}> Add To Cart</strong></button>
 
               <h2>Cart-Size:-{props.cart.length}</h2>
+              <h3>Clone branch has been made</h3>
   
               
             </div>
