@@ -30,6 +30,7 @@ const DetailsPage =(props)=>{
               }}><strong style={{color:'red'}}> Add To Cart</strong></button>
 
               <h2>Cart-Size:-{props.cart.length}</h2>
+              <h1>hii</h1>
               
             </div>
           </div>
