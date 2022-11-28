@@ -2,13 +2,14 @@ import React from 'react';
 
 
 import classes from './Product.module.css';
+import { Link } from 'react-router-dom';
 
 const Product =(props)=>{
     return <div className={classes.product}>
                 <div>
-                    <a href='#'>
-                       <img src={props.image}></img>
-                    </a>
+                    <Link to='/details'>
+                       <img src={props.image} alt='yasin'></img>
+                    </Link>
                 </div>
                 <div className={classes.productDetails}>
                 <h2>Model:{props.title}</h2>
