@@ -5,7 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import Wrapper from '../../Hoc/Wrapping';
 import { Link } from 'react-router-dom';
 
-const DetailsPage =(props)=>{
+const DetailsPage1 =(props)=>{
 
   
     
@@ -44,4 +44,4 @@ const DetailsPage =(props)=>{
   
 }
 
-export default DetailsPage;
+export default DetailsPage1;

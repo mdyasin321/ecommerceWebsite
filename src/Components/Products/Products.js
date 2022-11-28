@@ -16,6 +16,7 @@ import Product from './Product/Product.js';
  const storeProducts = [
     {
       id: 1,
+      details:'/details1',
       title: "Google Pixel - Black",
       img: img1,
       price: 10,
@@ -28,6 +29,7 @@ import Product from './Product/Product.js';
     },
     {
       id: 2,
+      details:'/details2',
       title: "Samsung S7",
       img: img2,
       price: 16,
@@ -40,6 +42,7 @@ import Product from './Product/Product.js';
     },
     {
       id: 3,
+      details:'/details3',
       title: "HTC 10 - Black",
       img: img3,
       company: "htc",
@@ -51,6 +54,7 @@ import Product from './Product/Product.js';
     },
     {
       id: 4,
+      details:'/details4',
       title: "HTC 10 - White",
       img: img4,
       price: 18,
@@ -63,6 +67,7 @@ import Product from './Product/Product.js';
     },
     {
       id: 5,
+      details:'/details5',
       title: "HTC Desire 626s",
       img: img5,
       price: 24,
@@ -75,6 +80,7 @@ import Product from './Product/Product.js';
     },
     {
       id: 6,
+      details:'/details6',
       title: "Vintage Iphone",
       img: img6,
       price: 17,
@@ -87,6 +93,7 @@ import Product from './Product/Product.js';
     },
     {
       id: 7,
+      details:'/details7',
       title: "Iphone 7",
       img: img7,
       price: 30,
@@ -99,6 +106,7 @@ import Product from './Product/Product.js';
     },
     {
       id: 8,
+      details:'/details8',
       title: "Smashed Iphone",
       img: img8,
       price: 2,
@@ -136,7 +144,8 @@ const Products =()=>{
                 image={element.img}
                 title={element.title}
                 price={element.price}
-                company={element.company}></Product>
+                company={element.company}
+                detail={element.details}></Product>
             )
         })
     }

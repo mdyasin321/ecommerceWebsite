@@ -14,7 +14,7 @@ const navbar =()=>{
                 <li><button>Login</button></li>
                 <li><a href="#" >Become a Seller</a></li>
                 <li><a href="#" >More</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><Link to="/orderspage">Cart</Link></li>
             </ul>
         </nav>
     </header>

@@ -1,7 +1,8 @@
 import React , {Component} from 'react';
 import Page1 from './Components/Page1/Page1.js';
 
-import DetailsPage from './Components/DetailsPage/DetailsPage.js';
+import DetailsPage1 from './Components/DetailsPage/DetailsPage1.js';
+import DetailsPage2 from './Components/DetailsPage/DetailsPage2.js';
 import OrdersPage from './Components/OrdersPage/OrdersPage.js';
 import {storeProducts} from './Components/Products/AllProductsDetails/AllProductDetails.js';
 import {
@@ -34,8 +35,10 @@ class App extends Component{
             
        <Routes>
         <Route exact path='/' element={<Page1/>}></Route>
+
         <Route exact path='/orderspage' element={< OrdersPage />}></Route>
-        <Route exact path='/details' element={< DetailsPage  add={this.addToCart} cart={this.state.cart} />}></Route> 
+        <Route exact path='/details1' element={< DetailsPage1  add={this.addToCart} cart={this.state.cart} />}></Route> 
+        <Route exact path='/details2' element={< DetailsPage2  add={this.addToCart} cart={this.state.cart} />}></Route> 
         
       
       </Routes>

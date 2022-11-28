@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Product =(props)=>{
     return <div className={classes.product}>
                 <div>
-                    <Link to='/details'>
+                    <Link to={props.detail}>
                        <img src={props.image} alt='yasin'></img>
                     </Link>
                 </div>
