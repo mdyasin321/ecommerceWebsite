@@ -17,13 +17,16 @@ class App extends Component{
   state={
     cart:[]
   }
-
+  
   addToCart =(id)=>{
     const newCart=[...this.state.cart];
     newCart.push(id);
     this.setState({
       cart:newCart
     })
+
+
+  
   }
 
   render(){
@@ -36,7 +39,7 @@ class App extends Component{
        <Routes>
         <Route exact path='/' element={<Page1/>}></Route>
 
-        <Route exact path='/orderspage' element={< OrdersPage />}></Route>
+        <Route exact path='/orderspage' element={< OrdersPage  arrCart={this.state.cart}/>}></Route>
         <Route exact path='/details1' element={< DetailsPage1  add={this.addToCart} cart={this.state.cart} />}></Route> 
         <Route exact path='/details2' element={< DetailsPage2  add={this.addToCart} cart={this.state.cart} />}></Route> 
         
