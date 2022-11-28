@@ -36,7 +36,7 @@ class App extends Component{
         <Route exact path='/' element={<Page1/>}></Route>
         <Route exact path='/orderspage' element={< OrdersPage />}></Route>
         <Route exact path='/details' element={< DetailsPage  add={this.addToCart} cart={this.state.cart} />}></Route> 
-        <div>yasin ansari</div>
+        
       
       </Routes>
     </Router>  
