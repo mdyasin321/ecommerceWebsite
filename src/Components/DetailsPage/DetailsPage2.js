@@ -27,7 +27,7 @@ const DetailsPage2 =(props)=>{
               </p>
               <button><Link to='/'><strong > Back to Products</strong></Link> </button>
               <button onClick={()=>{
-                return props.add(1)
+                return props.add(2)
               }}><strong style={{color:'red'}}> Add To Cart</strong></button> 
 
               <h2>Cart-Size:-{props.cart.length}</h2>

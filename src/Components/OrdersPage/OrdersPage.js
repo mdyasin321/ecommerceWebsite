@@ -4,11 +4,42 @@ import OrdersSummary from './OrdersSummary/OrdersSummary';
 import Navbar from '../Navbar/Navbar.js';
 import { storeProducts } from '../Products/AllProductsDetails/AllProductDetails';
 
-const OrdersPage=()=>{
+const OrdersPage=(props)=>{
+
+    // const cartProducts=props.arrCart.map((cartId)=>{
+    //     return (
+    //         storeProducts.map((storeProductsElement)=>{
+    //               if(storeProductsElement.id===cartId){
+    //                 return storeProductsElement
+    //               }
+    //         })
+    //     )
+    // })
+    // console.log(cartProducts);
+       
+
+
+      let cartProducts=[];
+    for(var i = 0; i < props.arrCart.length; i++) {
+        
+        for(var j = 0; j < storeProducts.length; j++) {
+            
+            let item=storeProducts[j];
+            if(item.id===props.arrCart[i]){
+                 cartProducts.push(item);
+            }
+        }
+    }
+  
+
+    // const num=456;
+
+
     return(
 
             <div className={classes.ordersPage}>
                 <Navbar></Navbar>
+                
                 <div className={classes.background}></div>
                 {/* I have given this to provide background color */}
                 <div className={classes.headingBar}>
@@ -21,7 +52,18 @@ const OrdersPage=()=>{
                     
                     <div className={classes.div5}>
                         <h3>Order Details</h3>
-                        {storeProducts.map((element)=>{
+                        {/* <div>{cartProducts}</div> */}
+
+                        {/* {storeProducts.map((element)=>{
+                            return (
+                                <OrdersSummary title={element.title}
+                                                img={element.img}
+                                                company={element.company}
+                                                price={element.price}></OrdersSummary>
+                            )
+                        })
+                    } */}
+                        {cartProducts.map((element)=>{
                             return (
                                 <OrdersSummary title={element.title}
                                                 img={element.img}
