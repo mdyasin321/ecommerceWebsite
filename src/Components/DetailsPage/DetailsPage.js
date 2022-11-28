@@ -3,6 +3,7 @@ import img1 from '../../img/product-1.png';
 import classes from './DetailsPage.module.css';
 import Navbar from '../Navbar/Navbar';
 import Wrapper from '../../Hoc/Wrapping';
+import { Link } from 'react-router-dom';
 
 const DetailsPage =(props)=>{
 
@@ -24,15 +25,13 @@ const DetailsPage =(props)=>{
               <h4>Some info About Product</h4>
               <p className={classes.testimonial_text}>Lorem Ipsum Dolor Amet Offal Butcher Quinoa Sustainable Gastropub, Echo Park Actually Green Juice Sriracha Paleo. Brooklyn Sriracha Semiotics, DIY Coloring Book Mixtape Craft Beer Sartorial Hella Blue Bottle. Tote Bag Wolf Authentic Try-Hard Put A Bird On It Mumblecore. Unicorn Lumbersexual Master Cleanse Blog Hella VHS, Vaporware Sartorial Church-Key Cardigan Single-Origin Coffee Lo-Fi Organic Asymmetrical. Taxidermy Semiotics Celiac Stumptown Scenester Normcore, Ethical Helvetica Photo Booth Gentrify.
               </p>
-              <button><strong > Back to Products</strong> </button>
+              <button><Link to='/'><strong > Back to Products</strong></Link> </button>
               <button onClick={()=>{
                 return props.add(1)
               }}><strong style={{color:'red'}}> Add To Cart</strong></button> 
 
               <h2>Cart-Size:-{props.cart.length}</h2>
-              <h3>Clone branch has been made</h3>
-              <h4>htrrr</h4>
-              <h5>sun and moon</h5>
+         
   
               
             </div>
