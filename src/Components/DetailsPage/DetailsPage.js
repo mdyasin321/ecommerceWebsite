@@ -27,7 +27,7 @@ const DetailsPage =(props)=>{
               <button><strong > Back to Products</strong> </button>
               <button onClick={()=>{
                 return props.add(1)
-              }}><strong style={{color:'red'}}> Add To Cart</strong></button>
+              }}><strong style={{color:'red'}}> Add To Cart</strong></button> 
 
               <h2>Cart-Size:-{props.cart.length}</h2>
               <h3>Clone branch has been made</h3>
